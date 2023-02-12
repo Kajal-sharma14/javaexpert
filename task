@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+
+public class quit_qpress {
+    static int num, pro=1;
+    static float sum=0;
+    static String i="";
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while(i!="q"){
+            System.out.println("Enter 'q' to quit .. Enter the value");
+            num = sc.nextInt();
+            sum = sum + num;
+
+            pro = pro * num;
+
+            System.out.println("The sum of numbers ::" + sum);
+            System.out.println("Product of numbers ::" + pro);
+
+        }
+    }
+}
